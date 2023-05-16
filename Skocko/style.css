@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a274b;
+  background-image: url("https://fb.slagalica-online.com/resources/img/bckImg3.jpg");
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+}
+
+#poeni {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+#poeni-prvog {
+  width: 100px;
+  background-color: #2919dc;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  height: 40px;
+}
+
+#poeni-drugog {
+  width: 100px;
+  background-color: red;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  height: 40px;
+}
+
+#vreme {
+  width: 70px;
+  background-color: rgb(255, 213, 0);
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: black;
+  margin: 10px;
+  height: 40px;
+}
+
+#imena {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+#ime-prvog {
+  width: 100px;
+  background-color: #2919dc;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  margin-top: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ime-drugog {
+  width: 100px;
+  background-color: red;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  margin-top: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skocko {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px auto;
+  width: 70%;
+}
+
+#svi-znaci {
+  display: flex;
+  flex-direction: column;
+}
+
+#svi-znaci button {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #1a274b;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+#pokusaji div div div {
+  cursor: pointer;
+}
+
+#prvi-pokusaj,
+#drugi-pokusaj,
+#treci-pokusaj,
+#cetvrti-pokusaj,
+#peti-pokusaj,
+#sesti-pokusaj,
+#sedmi-pokusaj,
+#osmi-pokusaj {
+  display: flex;
+}
+
+#pokusaj1,
+#rezultat-pokusaja1,
+#pokusaj2,
+#rezultat-pokusaja2,
+#pokusaj3,
+#rezultat-pokusaja3,
+#pokusaj4,
+#rezultat-pokusaja4,
+#pokusaj5,
+#rezultat-pokusaja5,
+#pokusaj6,
+#rezultat-pokusaja6,
+#pokusaj7,
+#rezultat-pokusaja7,
+#pokusaj8,
+#rezultat-pokusaja8 {
+  display: flex;
+}
+
+#pokusaj1 div,
+#pokusaj2 div,
+#pokusaj3 div,
+#pokusaj4 div,
+#pokusaj5 div,
+#pokusaj6 div,
+#pokusaj7 div,
+#pokusaj8 div {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: #5593d4;
+}
+
+#rezultat-pokusaja1 div,
+#rezultat-pokusaja2 div,
+#rezultat-pokusaja3 div,
+#rezultat-pokusaja4 div,
+#rezultat-pokusaja5 div,
+#rezultat-pokusaja6 div,
+#rezultat-pokusaja7 div {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#rezultati {
+  margin-top: 20px;
+}
+
+#proveri {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: rgb(0, 255, 115);
+  cursor: pointer;
+  padding: 4px;
+  width: 150px;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.active {
+  background-color: #c4d0f0;
+}
+
+#sledeca-igra {
+  padding: 4px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+  background-color: rgb(0, 255, 115);
+  color: #1a274b;
+  text-decoration: none;
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: none;
+  z-index: 0;
+}
+
+@keyframes movingBtn {
+  0% {
+    left: 0px;
+    top: -40px;
+  }
+
+  25% {
+    left: 0px;
+    top: -30px;
+  }
+
+  50% {
+    left: 0px;
+    top: -20px;
+  }
+
+  75% {
+    left: 0px;
+    top: -10px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.sledeca-igra-visible {
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  animation: movingBtn 0.5s;
+}
+
+@media only screen and (max-width: 670px) {
+  #skocko {
+    width: 100%;
+  }
+  #svi-znaci button {
+    width: 40px;
+    height: 40px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #pokusaj1 div,
+  #pokusaj2 div,
+  #pokusaj3 div,
+  #pokusaj4 div,
+  #pokusaj5 div,
+  #pokusaj6 div,
+  #pokusaj7 div,
+  #pokusaj8 div {
+    width: 40px;
+    height: 40px;
+  }
+
+  #rezultat-pokusaja1 div,
+  #rezultat-pokusaja2 div,
+  #rezultat-pokusaja3 div,
+  #rezultat-pokusaja4 div,
+  #rezultat-pokusaja5 div,
+  #rezultat-pokusaja6 div,
+  #rezultat-pokusaja7 div {
+    width: 40px;
+    height: 40px;
+  }
+
+  #proveri {
+    width: 100px;
+  }
+
+  #sledeca-igra {
+    width: 100px;
+    font-size: 16px;
+  }
+}

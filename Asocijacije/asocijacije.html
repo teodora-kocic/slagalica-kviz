@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asocijacije</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Asocijacije</h1>
+
+    <div id="poeni">
+      <div id="poeni-prvog"></div>
+      <div id="vreme">30</div>
+      <div id="poeni-drugog"></div>
+    </div>
+
+    <div id="imena">
+      <div id="ime-prvog"></div>
+      <div id="ime-drugog">ChatGPT</div>
+    </div>
+
+    <div id="asocijacije">
+      <div id="gornja-kolona">
+        <div id="kolona-A">
+          <button data-id="A" class="prvi-red-levo">A1</button>
+          <button data-id="A" class="drugi-red-levo">A2</button>
+          <button data-id="A" class="treci-red-levo">A3</button>
+          <button data-id="A" class="cetvrti-red-levo">A4</button>
+          <input
+            data-id="A"
+            type="text"
+            id="resenje-A"
+            class="resenje-levo disabled sva-resenja"
+            autocomplete="off"
+          />
+        </div>
+
+        <div id="kolona-B">
+          <button data-id="B" class="prvi-red-desno">B1</button>
+          <button data-id="B" class="drugi-red-desno">B2</button>
+          <button data-id="B" class="treci-red-desno">B3</button>
+          <button data-id="B" class="cetvrti-red-desno">B4</button>
+          <input
+            data-id="B"
+            type="text"
+            id="resenje-B"
+            class="resenje-desno disabled sva-resenja"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+
+      <input
+        type="text"
+        id="konacno-resenje"
+        class="disabled"
+        autocomplete="off"
+      />
+
+      <div id="donja-kolona">
+        <div id="kolona-C">
+          <input
+            data-id="C"
+            type="text"
+            id="resenje-C"
+            class="resenje-levo disabled sva-resenja"
+            autocomplete="off"
+          />
+          <button data-id="C" class="cetvrti-red-levo">C4</button>
+          <button data-id="C" class="treci-red-levo">C3</button>
+          <button data-id="C" class="drugi-red-levo">C2</button>
+          <button data-id="C" class="prvi-red-levo">C1</button>
+        </div>
+
+        <div id="kolona-D">
+          <input
+            data-id="D"
+            type="text"
+            id="resenje-D"
+            class="resenje-desno disabled sva-resenja"
+            autocomplete="off"
+          />
+          <button data-id="D" class="cetvrti-red-desno">D4</button>
+          <button data-id="D" class="treci-red-desno">D3</button>
+          <button data-id="D" class="drugi-red-desno">D2</button>
+          <button data-id="D" class="prvi-red-desno">D1</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="dalje">Dalje</button>
+
+    <button class="rezultat">Pogledaj rezultat</button>
+
+    <h1 class="poruka1">Cestitam, pobedili ste!</h1>
+    <h1 class="poruka2">Izgubili ste!</h1>
+    <h1 class="poruka3">Nereseno!</h1>
+
+    <div>
+      <a href="../Main/index.html" id="igraj-ponovo">IGRAJ PONOVO</a>
+    </div>
+  </body>
+</html>

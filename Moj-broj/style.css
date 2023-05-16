@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a274b;
+  background-image: url("https://fb.slagalica-online.com/resources/img/bckImg3.jpg");
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+}
+
+#poeni {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+#poeni-prvog {
+  width: 100px;
+  background-color: #2919dc;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  height: 40px;
+}
+
+#poeni-drugog {
+  width: 100px;
+  background-color: red;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  height: 40px;
+}
+
+#vreme {
+  width: 70px;
+  background-color: rgb(255, 213, 0);
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: black;
+  margin: 10px;
+  height: 40px;
+}
+
+#imena {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+#ime-prvog {
+  width: 100px;
+  background-color: #2919dc;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  margin-top: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ime-drugog {
+  width: 100px;
+  background-color: red;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  margin-top: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#moj-broj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a274b;
+  padding: 4px;
+  margin: 10px auto;
+  margin-top: 5px;
+  z-index: 1;
+}
+
+#dobijen-broj {
+  width: 100px;
+  height: 40px;
+  background-color: #93ecfe;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+#rezultati {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#rezultat-prvog {
+  width: 100px;
+  background-color: #2919dc;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 16px;
+  color: white;
+  margin: 20px;
+  height: 40px;
+}
+
+#rezultat-drugog {
+  width: 100px;
+  background-color: red;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 16px;
+  color: white;
+  margin: 20px;
+  height: 40px;
+}
+
+#racunanje {
+  width: 50%;
+  height: 100px;
+  font-size: 25px;
+  margin: 20px;
+  font-weight: bold;
+  background-color: white;
+}
+
+#potvrdi {
+  padding: 4px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 213, 0);
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#obrisi {
+  padding: 4px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  width: 75px;
+  border-radius: 20px 8px 8px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
+}
+
+#jednocifreni {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#jednocifreni button {
+  background-color: #93ecfe;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 8px;
+  width: 50px;
+  padding: 4px;
+  cursor: pointer;
+  height: 40px;
+}
+
+#dvocifreni {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#dvocifreni button {
+  background-color: #93ecfe;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 8px;
+  width: 50px;
+  padding: 4px;
+  cursor: pointer;
+  height: 40px;
+}
+
+#prvi {
+  flex-grow: 1;
+}
+
+#drugi {
+  flex-grow: 3;
+}
+
+#operacije {
+  display: flex;
+}
+
+#operacije button {
+  background-color: #2190a9;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 8px;
+  width: 50px;
+  padding: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: white;
+  height: 45px;
+}
+
+#stop {
+  padding: 4px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 213, 0);
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#sledeca-igra {
+  padding: 4px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(0, 255, 115);
+  color: #1a274b;
+  text-decoration: none;
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: none;
+  z-index: 0;
+}
+
+@keyframes movingBtn {
+  0% {
+    left: 0px;
+    top: -40px;
+  }
+
+  25% {
+    left: 0px;
+    top: -30px;
+  }
+
+  50% {
+    left: 0px;
+    top: -20px;
+  }
+
+  75% {
+    left: 0px;
+    top: -10px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.sledeca-igra-visible {
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  animation: movingBtn 0.5s;
+}
+
+.disabled1 {
+  pointer-events: none;
+  opacity: 0.7;
+}

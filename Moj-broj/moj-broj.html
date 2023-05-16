@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moj broj</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Moj broj</h1>
+
+    <div id="poeni">
+      <div id="poeni-prvog">0</div>
+      <div id="vreme">60</div>
+      <div id="poeni-drugog">0</div>
+    </div>
+
+    <div id="imena">
+      <div id="ime-prvog"></div>
+      <div id="ime-drugog">ChatGPT</div>
+    </div>
+
+    <div id="moj-broj">
+      <div id="dobijen-broj"></div>
+
+      <div id="rezultati">
+        <div id="rezultat-prvog"></div>
+        <div id="rezultat-drugog"></div>
+      </div>
+
+      <div id="racunanje"></div>
+
+      <div class="btns">
+        <button id="potvrdi">POTVRDI</button>
+        <button id="obrisi">X</button>
+      </div>
+
+      <div id="kliknuti">
+        <div class="ponudjeni">
+          <div id="ponudjeni-brojevi">
+            <div id="jednocifreni">
+              <button class="btns" id="ponudjen-1" data-val="1"></button>
+              <button class="btns" id="ponudjen-2" data-val="1"></button>
+              <button class="btns" id="ponudjen-3" data-val="1"></button>
+              <button class="btns" id="ponudjen-4" data-val="1"></button>
+            </div>
+
+            <div id="dvocifreni">
+              <button class="btns" id="prvi"></button>
+              <button class="btns" id="drugi"></button>
+            </div>
+          </div>
+        </div>
+
+        <div id="operacije">
+          <button class="operacija" id="plus">+</button>
+          <button class="operacija" id="minus">-</button>
+          <button class="operacija" id="multiply">*</button>
+          <button class="operacija" id="divide">/</button>
+          <button class="zagrade" id="open-bracket">(</button>
+          <button class="zagrade" id="closed-bracket">)</button>
+        </div>
+      </div>
+
+      <div>
+        <button id="stop">STOP</button>
+      </div>
+    </div>
+
+    <div>
+      <a href="../Skocko/skocko.html" id="sledeca-igra">SLEDECA IGRA</a>
+    </div>
+  </body>
+</html>

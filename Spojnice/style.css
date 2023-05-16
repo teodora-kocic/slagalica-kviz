@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a274b;
+  background-image: url("https://fb.slagalica-online.com/resources/img/bckImg3.jpg");
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+}
+
+#poeni {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+#poeni-prvog {
+  width: 100px;
+  background-color: #2919dc;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  height: 40px;
+}
+
+#poeni-drugog {
+  width: 100px;
+  background-color: red;
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  height: 40px;
+}
+
+#vreme {
+  width: 70px;
+  background-color: rgb(255, 213, 0);
+  padding: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: black;
+  margin: 10px;
+  height: 40px;
+}
+
+#imena {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+#ime-prvog {
+  width: 100px;
+  background-color: #2919dc;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  margin-top: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ime-drugog {
+  width: 100px;
+  background-color: red;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 2px;
+  color: rgb(255, 213, 0);
+  margin: 10px;
+  margin-top: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pitanje {
+  font-size: 20px;
+  border: 2px solid white;
+  width: 50%;
+  margin: auto;
+  padding: 8px;
+  background-color: #1a274b;
+  color: white;
+  font-weight: bold;
+}
+
+#spajanje {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#deo1,
+#deo2 {
+  border: 2px solid white;
+  width: 45%;
+}
+
+#deo2 button {
+  cursor: pointer;
+}
+
+#deo1 button,
+#deo2 button {
+  background-color: #1a274b;
+  color: white;
+  padding: 8px;
+  margin: 3px auto;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  border: 1px solid white;
+}
+
+#deo1 button:first-child,
+#deo2 button:first-child {
+  margin-top: 0;
+  border-top: none;
+}
+
+#deo1 button:last-child,
+#deo2 button:last-child {
+  margin-bottom: 0;
+}
+
+.active {
+  background-color: #314888 !important;
+}
+
+.blue {
+  background-color: blue !important;
+}
+
+.red {
+  background-color: red !important;
+}
+
+.yellow {
+  background-color: rgb(255, 213, 0) !important;
+  color: black !important;
+}
+
+#sledeca-igra {
+  padding: 4px;
+  font-size: 20px;
+  margin: 20px auto;
+  background-color: rgb(0, 255, 115);
+  color: #1a274b;
+  text-decoration: none;
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: none;
+  z-index: 0;
+}
+
+@keyframes movingBtn {
+  0% {
+    left: 0px;
+    top: -40px;
+  }
+
+  25% {
+    left: 0px;
+    top: -30px;
+  }
+
+  50% {
+    left: 0px;
+    top: -20px;
+  }
+
+  75% {
+    left: 0px;
+    top: -10px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.sledeca-igra-visible {
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  animation: movingBtn 0.5s;
+}
+
+@media only screen and (max-width: 1190px) {
+  #pitanje {
+    font-size: 18px;
+  }
+
+  #deo1 button,
+  #deo2 button {
+    font-size: 16px;
+  }
+
+  #sledeca-igra {
+    font-size: 16px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  #deo1,
+  #deo2 {
+    width: 49%;
+  }
+
+  #pitanje {
+    font-size: 16px;
+  }
+
+  #deo1 button,
+  #deo2 button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  #deo1,
+  #deo2 {
+    width: 50%;
+  }
+
+  #deo1 button,
+  #deo2 button {
+    height: 45px;
+    font-size: 12px;
+  }
+}
