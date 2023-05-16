@@ -204,7 +204,7 @@ divAsocijacije.addEventListener("click", pokusajIgraca);
 let brPoenaPlavog = 2;
 
 sviInputi.forEach((input) => {
-  input.addEventListener("keypress", function (e) {
+  input.addEventListener("keydown", function (e) {
     e.target.closest(`#kolona-${e.target.dataset.id}`).classList.add("active");
 
     btnDalje.disabled = true;
@@ -277,7 +277,7 @@ sviInputi.forEach((input) => {
   });
 });
 
-inputKonacnoResenje.addEventListener("keypress", function (e) {
+inputKonacnoResenje.addEventListener("keydown", function (e) {
   btnDalje.disabled = true;
 
   if (e.key === "Enter" && e.keyCode === 13) {
