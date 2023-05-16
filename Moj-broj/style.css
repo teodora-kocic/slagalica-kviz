@@ -157,6 +157,9 @@ h1 {
   color: white;
   margin: 20px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #rezultat-drugog {
@@ -170,6 +173,9 @@ h1 {
   color: white;
   margin: 20px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #racunanje {
