@@ -23,6 +23,8 @@ if (localStorage.getItem("ime")) {
 let rec1 = {
   slova: ["Nj", "U", "Č", "I", "F", "T", "O", "S", "M", "I", "Ć", "I"],
   kombinacije: [
+    "UĆI",
+    "IĆI",
     "OSIM",
     "MITO",
     "SOFT",
@@ -36,6 +38,7 @@ let rec1 = {
     "UOČITI",
     "STIĆI",
     "SIT",
+    "SITO",
     "OČISTI",
     "ČIST",
     "ČISTO",
@@ -54,6 +57,10 @@ let rec1 = {
 let rec2 = {
   slova: ["C", "I", "N", "I", "Dj", "A", "V", "J", "Č", "A", "G", "A"],
   kombinacije: [
+    "NAG",
+    "NAGA",
+    "VAN",
+    "VANI",
     "JAČI",
     "ČIVIJA",
     "VINA",
@@ -87,7 +94,6 @@ let rec2 = {
 let reci = [rec1, rec2];
 
 let randomRec = reci.sort(() => Math.random() - Math.random()).slice(0, 1)[0];
-console.log(randomRec);
 
 btnsSlova.forEach((btn) => {
   btn.disabled = true;
@@ -199,7 +205,6 @@ btnPotvrdi.addEventListener("click", function () {
   btnObrisi.disabled = true;
   btnPotvrdi.disabled = true;
   let btns = divRec.querySelectorAll("button");
-  console.log(btns);
 
   let nizSlova = [];
   btns.forEach((btn) => {
@@ -207,7 +212,6 @@ btnPotvrdi.addEventListener("click", function () {
   });
 
   let konacnaRec = nizSlova.join("");
-  console.log(konacnaRec);
 
   if (randomRec.kombinacije.find((k) => k === konacnaRec)) {
     if (randomRec.najduzaRec === konacnaRec) {
@@ -263,7 +267,6 @@ btnObrisi.addEventListener("click", function () {
     (btn) => btn.innerHTML === divRec.lastElementChild.innerHTML
   );
 
-  console.log(letterDisabled);
   letterDisabled.disabled = false;
   letterDisabled.classList.remove("disabled");
 
@@ -276,28 +279,20 @@ function pokusajProtivnika() {
     .sort(() => Math.random() - Math.random())
     .slice(0, 1)[0];
 
-  console.log([...randomResenje]);
-
   let randomResenjeNiz = [...randomResenje];
 
   let indeksMalogSlova = randomResenjeNiz.findIndex(
     (char) => char === char.toLowerCase()
   );
-  console.log(indeksMalogSlova);
 
   if (indeksMalogSlova > 0) {
-    console.log(indeksMalogSlova);
-
     let slovo1 = randomResenjeNiz.splice(indeksMalogSlova, 1);
     let slovo2 = randomResenjeNiz.splice(indeksMalogSlova - 1, 1);
-    console.log(slovo1, slovo2);
 
     let spojenaSlova = slovo2.concat(slovo1).join("");
 
     randomResenjeNiz.splice(indeksMalogSlova - 1, 0, spojenaSlova);
-    console.log(spojenaSlova);
   }
-  console.log(randomResenjeNiz);
 
   randomResenjeNiz.forEach((slovo) => {
     let btn = document.createElement("button");
@@ -330,7 +325,6 @@ function najduzaRec() {
   if (indeksMalogSlova > 0) {
     let slovo1 = najduzaRecNiz.splice(indeksMalogSlova, 1);
     let slovo2 = najduzaRecNiz.splice(indeksMalogSlova - 1, 1);
-    console.log(slovo1, slovo2);
 
     let spojenaSlova = slovo2.concat(slovo1).join("");
 

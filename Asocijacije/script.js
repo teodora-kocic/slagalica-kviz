@@ -204,7 +204,7 @@ divAsocijacije.addEventListener("click", pokusajIgraca);
 let brPoenaPlavog = 2;
 
 sviInputi.forEach((input) => {
-  input.addEventListener("keydown", function (e) {
+  input.addEventListener("keyup", function (e) {
     e.target.closest(`#kolona-${e.target.dataset.id}`).classList.add("active");
 
     btnDalje.disabled = true;
@@ -245,14 +245,6 @@ sviInputi.forEach((input) => {
         inputKonacnoResenje.disabled = false;
         inputKonacnoResenje.focus();
       } else {
-        // Object.values(btnPojedinacnihPoljaKopija).forEach((arr) => {
-        //   if (arr.length < 4) {
-        //     arr.forEach((a) => {
-        //       inputSvihResenja[a.dataset.id].disabled = true;
-        //     });
-        //   }
-        // });
-
         Object.keys(btnPojedinacnihPoljaKopija).forEach((kolona) => {
           if (btnPojedinacnihPoljaKopija[kolona].length < 4) {
             inputSvihResenja[kolona].disabled = true;
@@ -277,7 +269,9 @@ sviInputi.forEach((input) => {
   });
 });
 
-inputKonacnoResenje.addEventListener("keydown", function (e) {
+inputKonacnoResenje.addEventListener("keyup", function (e) {
+  e.preventDefault();
+
   btnDalje.disabled = true;
 
   if (e.key === "Enter" && e.keyCode === 13) {
