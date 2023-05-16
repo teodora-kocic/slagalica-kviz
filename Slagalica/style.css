@@ -36,6 +36,9 @@ h1 {
   color: rgb(255, 213, 0);
   margin: 10px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #poeni-drugog {
@@ -49,6 +52,9 @@ h1 {
   color: rgb(255, 213, 0);
   margin: 10px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #vreme {
@@ -62,6 +68,9 @@ h1 {
   color: black;
   margin: 10px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #imena {
