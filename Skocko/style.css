@@ -191,6 +191,9 @@ img {
   border: 3px solid black;
   border-radius: 8px;
   background-color: #5593d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #rezultat-pokusaja1 div,

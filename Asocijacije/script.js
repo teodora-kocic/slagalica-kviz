@@ -152,7 +152,11 @@ function aktivirajInputPolja() {
   }
 
   Object.keys(btnPojedinacnihPoljaKopija).forEach((kolona) => {
-    if (btnPojedinacnihPoljaKopija[kolona].length < 4) {
+    const trebaAktivirati =
+      btnPojedinacnihPoljaKopija[kolona].length < 4 &&
+      !inputSvihResenja[kolona].classList.contains("reseno") &&
+      !inputSvihResenja[kolona].classList.contains("protivnik-reseno");
+    if (trebaAktivirati) {
       inputSvihResenja[kolona].disabled = false;
       inputSvihResenja[kolona].classList.remove("disabled");
     }
@@ -248,6 +252,7 @@ sviInputi.forEach((input) => {
         Object.keys(btnPojedinacnihPoljaKopija).forEach((kolona) => {
           if (btnPojedinacnihPoljaKopija[kolona].length < 4) {
             inputSvihResenja[kolona].disabled = true;
+            inputSvihResenja[kolona].classList.add("disabled");
           }
         });
 
