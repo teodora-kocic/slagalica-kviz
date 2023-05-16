@@ -54,6 +54,7 @@ let rec1 = {
 let rec2 = {
   slova: ["C", "I", "N", "I", "Dj", "A", "V", "J", "Č", "A", "G", "A"],
   kombinacije: [
+    "ČIVIJA",
     "VINA",
     "NAIVAC",
     "ČIN",

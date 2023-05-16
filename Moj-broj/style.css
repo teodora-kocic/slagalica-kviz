@@ -217,6 +217,9 @@ h1 {
   padding: 4px;
   cursor: pointer;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #dvocifreni {
@@ -235,6 +238,9 @@ h1 {
   padding: 4px;
   cursor: pointer;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #prvi {
@@ -261,6 +267,9 @@ h1 {
   cursor: pointer;
   color: white;
   height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #stop {

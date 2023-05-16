@@ -143,6 +143,9 @@ h1 {
   font-size: 18px;
   width: 100%;
   border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #deo1 button:first-child,
@@ -255,6 +258,13 @@ h1 {
 }
 
 @media only screen and (max-width: 860px) {
+  #pitanje {
+    width: 70%;
+  }
+  #spajanje {
+    width: 70%;
+  }
+
   #deo1,
   #deo2 {
     width: 50%;
