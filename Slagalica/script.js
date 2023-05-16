@@ -23,6 +23,8 @@ if (localStorage.getItem("ime")) {
 let rec1 = {
   slova: ["Nj", "U", "Č", "I", "F", "T", "O", "S", "M", "I", "Ć", "I"],
   kombinacije: [
+    "MUČITI",
+    "SIĆI",
     "UĆI",
     "IĆI",
     "OSIM",
