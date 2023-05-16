@@ -135,6 +135,9 @@ h1 {
   border: 3px solid black;
   border-radius: 8px;
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #rezultati {

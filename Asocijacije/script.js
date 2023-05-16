@@ -209,7 +209,7 @@ sviInputi.forEach((input) => {
 
     btnDalje.disabled = true;
 
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && e.keyCode === 13) {
       e.target.disabled = true;
 
       resenjeKolone = svaResenjaKolona[e.target.dataset.id];
@@ -280,7 +280,7 @@ sviInputi.forEach((input) => {
 inputKonacnoResenje.addEventListener("keypress", function (e) {
   btnDalje.disabled = true;
 
-  if (e.key === "Enter") {
+  if (e.key === "Enter" && e.keyCode === 13) {
     inputKonacnoResenje.disabled = true;
     let value = inputKonacnoResenje.value.toLowerCase();
     if (value === konacnoResenje.toLowerCase()) {
