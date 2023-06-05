@@ -1,1 +1,1 @@
-# slagalica-kviz
+https://slagalica-kviz.netlify.app/
